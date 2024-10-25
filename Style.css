@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://i.ibb.co/z7wHZcN/image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Center container styling */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Transparent background for text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Button styling remains unchanged */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+#noBtn {
+    background-color: #ff4d4d;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Hidden class remains unchanged */
+.hidden {
+    display: none;
+}
+
+/* Popup styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: popupEffect 0.5s ease-in-out forwards;
+    z-index: 1000;
+}
+
+.popup h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.popup p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#closePopup {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes popupEffect {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translate(-50%, -50%);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
